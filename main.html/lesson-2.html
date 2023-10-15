@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="https://www.google.com/" method="POST">
+        <fieldset>
+            <legend>Purchases</legend>
+            <label for="name">Product Name:</label>
+            <br>
+            <select name="product_name" id="name">
+                <option value="bread">Нан</option>
+                <option value="milk">Сүт</option>
+                <option value="kefir">Айран</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="quantity">Quantity:</label>
+            <br>
+            <input type="number" max="10">
+        </fieldset>
+
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="firstname">First Name:</label>
+            <br>
+            <input type="text" placeholder="Введите ваше имя">
+            <br>
+            <br>
+
+            <label for="firstname">Last Name:</label>
+            <br>
+            <input type="text" placeholder="Введите вашу фамилия">
+        </fieldset>
+
+        <fieldset>
+            <legend>Credit Card Details</legend>
+            <label for="card">Credit Card Type:</label>
+            <br>
+            <input id="visa" type="radio" name="card">
+            <label for="visa">Visa</label>
+            <br>
+            <input id="mastercard" type="radio" name="card">
+            <label for="mastercard">MasterCard</label>
+            <br>
+
+            <label for="card_number">Credit Card Number:</label>
+            <br>
+            <input type="number">
+            <br>
+            <label for="expiry_date">Expiry Date</label>
+            <br>
+
+            <input type="date">
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Billing Information</legend>
+
+            <label for="postal">Postal Address:</label>
+            <br>
+            <textarea name="" id="postal" cols="20" rows="3"></textarea>
+            <br>
+            <label for="Address">Home Adress:</label>
+            <input type="checkbox" name="" id="address">
+            <label for="address">Same as abovie</label>
+            <br>
+            <textarea name="" id="address" cols="29" rows="3"></textarea>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Place my order">
+    </form>
+</body>
+
+</html>

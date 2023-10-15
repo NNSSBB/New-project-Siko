@@ -1,0 +1,11 @@
+header {
+    background-color: blue;
+}
+.navbar-list a {
+    color: aliceblue;
+}
+.navbar-list li {
+    display: inline;
+    margin-left: 32px; 
+}
+
