@@ -1,0 +1,114 @@
+.forth {
+ display: grid;
+ grid-template-rows: 20% 80%;
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-areas:
+ "header header header"
+ "nav article ads";
+
+  .text4 {
+    grid-area: header;
+    text-align: center;
+    @include mainText;
+  }  
+ .card1 {
+    transition: width 2s, height 2s, transform 2s;
+    grid-area: nav;
+    padding-left: 20px;
+    background-color: #FBDACF;
+    width: 360px;
+    height: 566px;
+    border-radius: 20px;
+h4 {
+    color: #446381;
+    font-size: 32px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+h2 {
+    color: #EB8382;
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+ul {
+    padding-bottom: 30px;
+    li {
+        color: #826F8C;
+        font-size: 18px;
+        line-height: 60px;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+button {
+    font-size: 18px;
+    font-family: inherit;
+    color: white;
+    background: linear-gradient(#4499D9, #7367BE);
+    border: none;
+    border-radius: 100px;
+    padding: 13px 70px;
+    text-align: center;
+}
+}
+  .card2 {
+    transition: width 2s, height 2s, transform 2s;
+    padding-left: 20px;
+    background-color: #FBDACF;
+    width: 360px;
+    height: 566px;
+    border-radius: 20px;
+    @include mainCard;
+    button {
+        @include mainBtn2;
+    }
+  }
+  .card3 {
+    transition: width 2s, height 2s, transform 2s;
+    grid-area: ads;
+    padding-left: 20px;
+    background-color: #FBDACF;
+    width: 360px;
+    height: 566px;
+    border-radius: 20px;
+    @include mainCard;
+    button {
+        @include mainBtn2;
+    }
+  }
+    .card1:hover {
+    height: 606px;
+    background-color: #09143C;
+    transform: scale(1.05);
+    h4 {
+        color: #FFFFFF;
+    }
+    a {
+        color: #FFFFFF;
+    }
+    }
+    .card2:hover {
+        height: 606px;
+        background-color: #09143C;
+        transform: scale(1.05);
+        h4 {
+            color: #FFFFFF;
+        }
+        a {
+            color: #FFFFFF;
+        }
+        }
+        .card3:hover {
+            height: 606px;
+            background-color: #09143C;
+            transform: scale(1.05);
+            h4 {
+                color: #FFFFFF;
+            }
+            a {
+                color: #FFFFFF;
+            }
+            }          
+ }
+

@@ -1,0 +1,35 @@
+footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        
+    }
+    p {
+    color: #826F8C;
+    line-height: 28px;
+    font-weight: 500;
+    }
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .facebook {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FCD8CB;
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+        }
+        .twitter {
+           @include mainIcon; 
+        }
+        .instagram {
+           @include mainIcon; 
+        }
+    }
+} 

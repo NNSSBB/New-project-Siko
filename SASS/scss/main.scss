@@ -1,0 +1,110 @@
+@mixin mainBtn() {
+    font-size: 18px;
+    font-family: inherit;
+    color: white;
+    background: linear-gradient(#4499D9, #7367BE);
+    border: none;
+    border-radius: 100px;
+    padding: 13px 14px;
+}
+@mixin mainBtn2() {
+    font-size: 18px;
+    font-family: inherit;
+    color: white;
+    background: linear-gradient(#4499D9, #7367BE);
+    border: none;
+    border-radius: 100px;
+    padding: 13px 70px;
+}
+@mixin mainText () {
+    h4 {
+        color: #446381;
+        font-size: 23px;
+        padding-bottom: 30px;
+    }
+    h1 {
+        color: #EB8382;
+        font-weight: 700;
+        font-size: 58px;
+    }
+    p {
+        color: #826F8C;
+        font-size: 18px;
+        padding-bottom: 30px;
+        padding-top: 30px
+        
+       }
+}
+@mixin mainCard {
+    h4 {
+        color: #446381;
+        font-size: 32px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    h2 {
+        color: #EB8382;
+        font-size: 35px;
+        padding-bottom: 30px;
+    }
+    ul {
+        padding-bottom: 30px;
+        li {
+            color: #826F8C;
+            font-size: 18px;
+            line-height: 60px;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+}
+@mixin mainIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FCD8CB;
+    width: 40px;
+     height: 40px;
+    border-radius: 20px;
+    
+}
+
+
+
+$main-black: #355070;
+$main-dark-brown: #6D597A;
+$main-brown: #B56576;
+$main-light-brown: #E56B6F;
+$main-yellow: #EAAC8B;
+$main-bg: #FFE6D6;
+$secondary-black: #446381;
+$secondary-brown: #EB8382;
+
+@import "./header";
+@import "./hero";
+@import "./secondlist";
+@import "./thirdlist";
+@import "./forthlist";
+@import "./footer";
+
+
+
+
+
+*, html, *::after, *::before {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    max-width: 1167px;
+    margin-inline: auto;
+    background-color: $main-bg;
+    font-family: 'Josefin Sans', sans-serif;
+ }
+
+li {
+    list-style-type: none;
+}
