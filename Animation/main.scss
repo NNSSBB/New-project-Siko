@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: aliceblue;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.circle {
+width: 200px;
+height: 200px;
+border-radius: 100%;
+animation: fadeLeft 2s ease-in-out infinite 1s;
+}
